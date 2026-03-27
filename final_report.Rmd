@@ -1,0 +1,16 @@
+---
+title: "Final Project"
+output: html_document
+---
+
+```{r}
+summary_tbl <- readRDS("output/summary_tbl.rds")
+```
+
+```{r}
+knitr::kable(summary_tbl)
+```
+
+```{r}
+knitr::include_graphics("output/glucose_bmi_plot.png")
+```
