@@ -27,6 +27,15 @@ The report includes:
 ## Data
 - `diabetes.csv` contains the dataset used for the analysis.
 
+## Reproducibility
+This project uses `renv` to manage the R package environment.
+
+To synchronize the package environment, run:
+
+```bash
+make install
+```
+
 ## How to generate the final report
 Open the terminal in the project directory and run:
 

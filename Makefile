@@ -1,4 +1,7 @@
-.PHONY: all clean
+.PHONY: all clean install
+
+install:
+	Rscript -e "renv::restore(prompt = FALSE)"
 
 all: output/final_report.html
 
