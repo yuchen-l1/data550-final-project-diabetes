@@ -1,0 +1,8 @@
+.git
+.Rproj.user
+renv/.cache
+renv/staging
+output
+report
+*.Rproj
+.DS_Store

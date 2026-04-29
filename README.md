@@ -99,3 +99,29 @@ and writes the final HTML output to:
 ```text
 output/final_report.html
 ```
+
+## Docker
+
+This project includes a Docker image that can be used to generate the final report in a reproducible environment.
+
+### Build the Docker image locally
+
+```bash
+docker build -t br1anli/data550-final-project-diabetes .
+```
+
+### DockerHub image
+
+The Docker image is available on DockerHub:
+
+https://hub.docker.com/r/br1anli/data550-final-project-diabetes
+
+### Generate the report using Docker
+
+To generate the report using the Docker image, run:
+
+```bash
+make docker-run
+```
+
+This command creates a local report/ directory and mounts it into the Docker container. After the container finishes running, the compiled report will be available in the local report/ folder.
